@@ -11,7 +11,7 @@
 
   <title>
     
-      MullOver &middot; MullOver
+      Archive &middot; MullOver
     
   </title>
 
@@ -57,7 +57,7 @@
     </div>
 
     <nav class="sidebar-nav">
-      <a class="sidebar-nav-item active" href="/">Home</a>
+      <a class="sidebar-nav-item" href="/">Home</a>
 
       
 
@@ -75,7 +75,7 @@
       
         
           
-            <a class="sidebar-nav-item" href="/archive/">Archive</a>
+            <a class="sidebar-nav-item active" href="/archive/">Archive</a>
           
         
       
@@ -97,30 +97,18 @@
 
 
     <div class="content container">
-      <div class="posts">
+      <div class="page">
+  <h1 class="page-title">Archive</h1>
+  <ul>
   
-  <div class="post">
-    <h1 class="post-title">
-      <a href="/2016/01/19/admm-for-distributed-statistical-learning/">
-        用ADMM实现统计学习问题的分布式计算
-      </a>
-    </h1>
-
-    <span class="post-date">19 Jan 2016</span>
-
-    最近研读了 Boyd 2011 年那篇关于 ADMM 的综述。这是由两件事情促成的：一是刘鹏的《计算广告》中 CTR 预测技术那部分提到了用 ADMM 框架来并行化 LR 问题的求解；二是我的一个本科同学在读博士期间做的东西恰好用到了 ADMM，我们曾经谈到过这个框架。我从这篇综述里整理出了一个条思路，顺着这个思路看下去，就能对 ADMM 原理和应用有个大概的了解。因此，此文可以当做 ADMM 的快速入门。 交替方向乘子法（Alternating Direction Method of Multipliers，ADMM）是一种求解优化问题的计算框架, 适用于求解分布式凸优化问题，特别是统计学习问题。 ADMM 通过分解协调（Decomposition-Coordination）过程，将大的全局问题分解为多个较小、较容易求解的局部子问题，并通过协调子问题的解而得到大的全局问题的解。 ADMM 最早分别由 Glowinski &amp; Marrocco 及 Gabay &amp; Mercier 于 1975 年和 1976 年提出，并被 Boyd 等人于 2011 年重新综述并证明其适用于大规模分布式优化问题。由于 ADMM 的提出早于大规模分布式计算系统和大规模优化问题的出现，所以在 2011 年以前，这种方法并不广为人知。 ADMM 计算框架 一般问题...
-  </div>
+    <li>
+      <a href="/2016/01/19/admm-for-distributed-statistical-learning/">用ADMM实现统计学习问题的分布式计算</a>&nbsp;&nbsp;<small>19 Jan 2016</small>
+    </li>
   
+</ul>
+
 </div>
 
-<div class="pagination">
-  
-    <span class="pagination-item older">Older</span>
-  
-  
-    <span class="pagination-item newer">Newer</span>
-  
-</div>
     </div>
 
   </body>
