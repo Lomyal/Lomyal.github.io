@@ -4,7 +4,7 @@
  <title>MullOver</title>
  <link href="http://mullover.me/atom.xml" rel="self"/>
  <link href="http://mullover.me/"/>
- <updated>2016-01-20T13:49:56+08:00</updated>
+ <updated>2016-01-20T14:24:18+08:00</updated>
  <id>http://mullover.me</id>
  <author>
    <name>lomyal</name>
@@ -84,11 +84,11 @@
 
 &lt;p&gt;时，ADMM 的迭代收敛（当  \(k \rightarrow \infty \) 时， \(r^{k} \rightarrow 0, f(x^{k}) + g(z^{k}) \rightarrow p^{\star}, y^{k} \rightarrow y^{\star} \) ）。这样的收敛条件比没有使用增广拉格朗日函数的对偶上升法的收敛条件宽松了不少。&lt;/p&gt;
 
-&lt;p&gt;在高精度要求下，ADMM的收敛很慢；但在中等精度要求下，ADMM的收敛速度可以接受（几十次迭代）。因此ADMM框架尤其适用于不要求高精度的优化问题，这恰好是大规模统计学习问题的特点。&lt;/p&gt;
+&lt;p&gt;在高精度要求下，ADMM 的收敛很慢；但在中等精度要求下，ADMM 的收敛速度可以接受（几十次迭代）。因此 ADMM 框架尤其适用于不要求高精度的优化问题，这恰好是大规模统计学习问题的特点。&lt;/p&gt;
 
 &lt;h3 id=&quot;consensus&quot;&gt;一致性（Consensus）问题&lt;/h3&gt;
 
-&lt;p&gt;一类可用ADMM框架解决的特殊优化问题是一致性（Consensus）问题，其形式为&lt;/p&gt;
+&lt;p&gt;一类可用 ADMM 框架解决的特殊优化问题是一致性（Consensus）问题，其形式为&lt;/p&gt;
 
 &lt;script type=&quot;math/tex; mode=display&quot;&gt;\min \quad \sum_{i = 1}^{N} f_{i}(z) + g(z)&lt;/script&gt;
 
@@ -136,7 +136,7 @@
 
 &lt;script type=&quot;math/tex; mode=display&quot;&gt;l(D,d,z) = \textbf{1}^{T}(\textbf{1} - Dzd^{T})_{+}&lt;/script&gt;
 
-&lt;p&gt;将训练数据集（输入数据和输出数据）在样本的维度（ \(m\) ）划分成N块&lt;/p&gt;
+&lt;p&gt;将训练数据集（输入数据和输出数据）在样本的维度（ \(m\) ）划分成 \(N\) 块&lt;/p&gt;
 
 &lt;script type=&quot;math/tex; mode=display&quot;&gt;D =
 \begin{pmatrix}
@@ -223,7 +223,7 @@ d =
   &lt;/ol&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;该算法中假设有N个处理器，每个处理器都运行同样的程序，只是处理的数据不同。第6步中的 &lt;em&gt;Allreduce&lt;/em&gt; 是 MPI 中定义的操作，表示对相应的局部变量进行全局操作（如这里的求和操作），并将结果更新到每一个处理器。&lt;/p&gt;
+&lt;p&gt;该算法中假设有 \(N\) 个处理器，每个处理器都运行同样的程序，只是处理的数据不同。第6步中的 &lt;em&gt;Allreduce&lt;/em&gt; 是 MPI 中定义的操作，表示对相应的局部变量进行全局操作（如这里的求和操作），并将结果更新到每一个处理器。&lt;/p&gt;
 
 &lt;h3 id=&quot;mapreduce&quot;&gt;MapReduce&lt;/h3&gt;
 

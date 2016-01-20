@@ -167,11 +167,11 @@
 
 <p>时，ADMM 的迭代收敛（当  \(k \rightarrow \infty \) 时， \(r^{k} \rightarrow 0, f(x^{k}) + g(z^{k}) \rightarrow p^{\star}, y^{k} \rightarrow y^{\star} \) ）。这样的收敛条件比没有使用增广拉格朗日函数的对偶上升法的收敛条件宽松了不少。</p>
 
-<p>在高精度要求下，ADMM的收敛很慢；但在中等精度要求下，ADMM的收敛速度可以接受（几十次迭代）。因此ADMM框架尤其适用于不要求高精度的优化问题，这恰好是大规模统计学习问题的特点。</p>
+<p>在高精度要求下，ADMM 的收敛很慢；但在中等精度要求下，ADMM 的收敛速度可以接受（几十次迭代）。因此 ADMM 框架尤其适用于不要求高精度的优化问题，这恰好是大规模统计学习问题的特点。</p>
 
 <h3 id="consensus">一致性（Consensus）问题</h3>
 
-<p>一类可用ADMM框架解决的特殊优化问题是一致性（Consensus）问题，其形式为</p>
+<p>一类可用 ADMM 框架解决的特殊优化问题是一致性（Consensus）问题，其形式为</p>
 
 <script type="math/tex; mode=display">\min \quad \sum_{i = 1}^{N} f_{i}(z) + g(z)</script>
 
@@ -219,7 +219,7 @@
 
 <script type="math/tex; mode=display">l(D,d,z) = \textbf{1}^{T}(\textbf{1} - Dzd^{T})_{+}</script>
 
-<p>将训练数据集（输入数据和输出数据）在样本的维度（ \(m\) ）划分成N块</p>
+<p>将训练数据集（输入数据和输出数据）在样本的维度（ \(m\) ）划分成 \(N\) 块</p>
 
 <script type="math/tex; mode=display">D =
 \begin{pmatrix}
@@ -306,7 +306,7 @@ d =
   </ol>
 </blockquote>
 
-<p>该算法中假设有N个处理器，每个处理器都运行同样的程序，只是处理的数据不同。第6步中的 <em>Allreduce</em> 是 MPI 中定义的操作，表示对相应的局部变量进行全局操作（如这里的求和操作），并将结果更新到每一个处理器。</p>
+<p>该算法中假设有 \(N\) 个处理器，每个处理器都运行同样的程序，只是处理的数据不同。第6步中的 <em>Allreduce</em> 是 MPI 中定义的操作，表示对相应的局部变量进行全局操作（如这里的求和操作），并将结果更新到每一个处理器。</p>
 
 <h3 id="mapreduce">MapReduce</h3>
 
