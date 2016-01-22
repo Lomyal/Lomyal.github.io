@@ -150,7 +150,7 @@
 <p>其中 \( x \in R^{s}, z \in R^{n}, A \in R^{p \times s}, B \in R^{p \times n}, c \in R^{p}, f : R^{s} \rightarrow R, g : R^{n} \rightarrow R \)。
 \(x\) 与 \(z\) 是优化变量；\( f(x) + g(z) \) 是待最小化的目标函数（Objective Function），它由与变量 \(x\) 相关的 \(f(x)\) 和与变量 \(x\) 相关的 \(g(z)\) 这两部分构成，这种结构可以很容易地处理统计学习问题优化目标中的正则化项； \(Ax + Bz = c\) 是 \(p\) 个等式约束条件（Equality Constraints）的合写。其增广拉格朗日函数（Augmented Lagrangian）为</p>
 
-<script type="math/tex; mode=display">L_{\rho}(x,z,y) = f(x) + g(x) + y^{T} (Ax + Bz - c) + (\rho / 2) \| Ax + Bz - c \| _{2}^{2}</script>
+<script type="math/tex; mode=display">L_{\rho}(x,z,y) = f(x) + g(z) + y^{T} (Ax + Bz - c) + (\rho / 2) \| Ax + Bz - c \| _{2}^{2}</script>
 
 <p>其中 \(y\) 是对偶变量（或称为拉格朗日乘子）， \(\rho &gt; 0\) 是惩罚参数。 \(L_{\rho}\) 名称中的“增广”是指其中加入了二次惩罚项 \((\rho / 2) \Vert Ax + Bz - c \Vert _{2}^{2}\) 。</p>
 
