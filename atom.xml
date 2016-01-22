@@ -4,7 +4,7 @@
  <title>MullOver</title>
  <link href="http://mullover.me/atom.xml" rel="self"/>
  <link href="http://mullover.me/"/>
- <updated>2016-01-22T17:12:09+08:00</updated>
+ <updated>2016-01-23T00:29:16+08:00</updated>
  <id>http://mullover.me</id>
  <author>
    <name>lomyal</name>
@@ -112,7 +112,7 @@
     u^{k + 1}_{i} &amp;:= u^{k}_{i} + x^{k + 1}_{i} - z^{k + 1}
 \end{aligned} %]]&gt;&lt;/script&gt;
 
-&lt;p&gt;其中 \(\overline{x} = \sum_{i = 1}^{N} x_{i}, \overline{u} = \sum_{i = 1}^{N} u_{i}\) 。&lt;/p&gt;
+&lt;p&gt;其中 \(\overline{x} = (1/N) \sum_{i = 1}^{N} x_{i}, \overline{u} = (1/N) \sum_{i = 1}^{N} u_{i}\) 。&lt;/p&gt;
 
 &lt;p&gt;可以看出，变量 \(x\) 和对偶变量 \(u\) 的更新都是可以采用分布式计算的。只有在更新变量 \(z\) 时，需要收集 \(x\) 和 \(u\) 分布式计算的结果，进行集中式计算。&lt;/p&gt;
 
