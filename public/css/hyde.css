@@ -41,7 +41,8 @@ html {
 }
 @media (min-width: 58em) {
   html {
-    font-size: 20px;
+    font-size: 18px;
+    /*font-size: 20px;*/
   }
 }
 
@@ -129,7 +130,8 @@ a.sidebar-nav-item:focus {
 
 @media (min-width: 48em) {
   .content {
-    max-width: 38rem;
+    /*max-width: 38rem;*/
+    max-width: 40rem;
     margin-left: 20rem;
     margin-right: 2rem;
   }
@@ -167,6 +169,27 @@ a.sidebar-nav-item:focus {
   }
 }
 
+/* 居中 */
+.aligncenter {
+  clear: both;
+  display: block;
+  margin:auto;
+}
+
+/* 图标题 */
+.figure-title {
+  text-align: center;
+  font-size: 14px;
+  font-style: bold;
+  margin-bottom: 2rem;
+}
+.figure-title > div {
+  display: inline;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-left: .25rem solid #c5c5c5;
+  border-right: .25rem solid #c5c5c5;
+}
 
 
 /*
